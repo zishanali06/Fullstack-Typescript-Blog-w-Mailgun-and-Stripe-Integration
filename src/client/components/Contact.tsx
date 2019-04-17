@@ -26,7 +26,7 @@ export default class Contact extends React.Component<ContactProps, ContactState>
                 },
                 body: JSON.stringify(email)
             })
-            this.props.history.push('/');
+            this.props.history.push('/', { contact: true });
         } catch (error) {
             throw error;
         }

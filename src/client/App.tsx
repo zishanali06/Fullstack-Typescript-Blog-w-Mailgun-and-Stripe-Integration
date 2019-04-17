@@ -56,7 +56,7 @@ export default class App extends React.Component<IAppProps, IAppState> {
                                     <Link to='/contact' className="nav-link">Contact Us</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to='/donate' className="nav-link font-weight-bold text-success border">Donate</Link>
+                                    <Link to='/donate' className="nav-link font-weight-bold text-success">Donate</Link>
                                 </li>
                             </ul>
                         </div>
