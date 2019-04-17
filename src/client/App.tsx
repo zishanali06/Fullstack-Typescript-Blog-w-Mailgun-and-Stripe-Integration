@@ -8,6 +8,7 @@ import Admin from './components/Admin';
 import Changepost from './components/Changepost';
 import Login from './components/Login';
 import Donations from './components/Donations';
+import Contact from './components/Contact';
 
 export default class App extends React.Component<IAppProps, IAppState> {
 
@@ -52,6 +53,9 @@ export default class App extends React.Component<IAppProps, IAppState> {
                                     <Link to='/login' className="nav-link">Login</Link>
                                 </li>
                                 <li className="nav-item">
+                                    <Link to='/contact' className="nav-link">Contact Us</Link>
+                                </li>
+                                <li className="nav-item">
                                     <Link to='/donate' className="nav-link font-weight-bold text-success border">Donate</Link>
                                 </li>
                             </ul>
@@ -64,6 +68,7 @@ export default class App extends React.Component<IAppProps, IAppState> {
                         <Route exact path='/login' component={Login}></Route>
                         <Route exact path='/blog/:id' component={Onepost}></Route>
                         <Route exact path='/donate' component={Donations}></Route>
+                        <Route exact path='/contact' component={Contact}></Route>
                     </Switch>
                 </main>
             </Router>
